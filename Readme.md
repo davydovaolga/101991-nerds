@@ -1,7 +1,7 @@
-# Личный проект «Нёрдс»
+﻿# Личный проект «Нёрдс»
 
 * Студент: [Olga Davydova](https://up.htmlacademy.ru/htmlcss/13/user/101991).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/13/user/29644).
 
 ---
 
