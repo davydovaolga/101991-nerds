@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн студия Nerds</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#" alt="логотип"><img src="img/logo.png" width="150px" height="50px" alt="Nerds"></a>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              Магазин
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+          <div class="cart">
+            <a class="btn-cart" href="#">Корзина</a>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="filter">
+          <form name="filter" method="post" action="filter.php">
+          <fieldset>
+            <legend>Стоимость:</legend>
+              <input type="range" min="1" max="15000" step="1">
+              От
+              <lable><input type="text" value="0"/> </lable>
+              До
+              <lable><input type="text" value="15000"/> </lable>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+              <lable><input type="radio" name="adaptive" checked />Адаптивная</lable>
+              <lable><input type="radio" name="fix" />Фиксированная</lable>
+              <lable><input type="radio" name="stretch" />Резиновая</lable>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <label><input type="checkbox" name="slider" checked>Слайдер</label>
+              <label><input type="checkbox" name="advantages">Блок приемуществ</label>
+              <label><input type="checkbox" name="news" checked>Новости</label>
+              <label><input type="checkbox" name="galary">Галерея</label>
+              <label><input type="checkbox" name="cart">Корзина</label>
+            </fieldset>
+        </div>
+        <div class="catalog">
+          <div class="sort">
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+            </ul>
+            <div class="sort-arrow">
+              <a href="#">Вниз</a>
+              <a href="#">Вверх</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="title-maket">
+            </div>
+            <img src="img/maket1.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Aviator</h4>
+              <p>Односторонний макет с авторским дизайном</p>
+              <a href="#" class="btn">8000 Р.</a>
+            </div>
+            <div class="catalog-item">
+              <div class="title-maket">
+              </div>
+              <img src="img/maket2.jpg" alt="Авиатор"/>
+              <div class="hover-maket">
+                <h4>Sunset</h4>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a href="#" class="btn">10000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="title-maket">
+              </div>
+              <img src="img/maket3.jpg" alt="Авиатор"/>
+              <div class="hover-maket">
+                <h4>Forte</h4>
+                <p>Отличный макет для личного блога</p>
+                <a href="#" class="btn">5000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="title-maket">
+              </div>
+              <img src="img/maket4.jpg" alt="Авиатор"/>
+              <div class="hover-maket">
+                <h4>Modern organic thai</h4>
+                <p>Сайт для ресторана быстрого питания</p>
+                <a href="#" class="btn">12000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="title-maket">
+              </div>
+              <img src="img/maket5.jpg" alt="Авиатор"/>
+              <div class="hover-maket">
+                <h4>Avenue</h4>
+                <p>Макет для блога о путешествиях</p>
+                <a href="#" class="btn">8000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="title-maket">
+              </div>
+              <img src="img/maket6.jpg" alt="Авиатор"/>
+              <div class="hover-maket">
+                <h4>Dovetail</h4>
+                <p>Интернет-магазин с галереей товаров</p>
+                <a href="#" class="btn">14000 Р.</a>
+              </div>
+            </div>
+        </div>
+        <div class="pagination">
+        <ul>
+            <li>
+              <a class="page-active" href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+        </div>
+    	</div>
+      <footer class="footer">
+        <div class="conteiner">
+          <div class="footer-map">
+          </div>
+          <div class="footer-contacts">
+            Nerds Design Studio<br />
+            191186, Санкт-Петербург,<br />
+            ул. Б. Коннюшенная, д. 19/8<br />
+            Тел. +7 (812) 275-75-75
+            <a href="#" class="btn">Напишите нам</a>
+          </div>
+          <div class="letter">
+            <form method="post" name="letter">
+              <p>
+                Ваше имя:
+              </p>
+              <input type="text" placeholder="Представьтесь, пожалуйста" />
+              <p>
+                Ваше e-mail:
+              </p>
+              <input type="text" placeholder="Для отправки ответа" />
+              <p>
+                Текст письма:
+              </p>
+              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+              <input type="submit" value="Отправить" />
+            </form>
+          </div>
+          <div class="footer-social">
+            <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+            <a class="btn-social btn-social-fb" href="#">Файсбук</a>
+            <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+            <h4>
+              Давайте дружить, это выгодно!
+            </h4>
+            <p>
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
