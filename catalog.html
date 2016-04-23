@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн студия Nerds</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -33,7 +34,7 @@
       </header>
       <div class="container">
         <div class="filter">
-          <form name="filter" method="post" action="filter.php">
+        <form name="filter" method="post" action="filter.php">
           <fieldset>
             <legend>Стоимость:</legend>
               <input type="range" min="1" max="15000" step="1">
@@ -44,9 +45,9 @@
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-              <lable><input type="radio" name="adaptive" checked />Адаптивная</lable>
-              <lable><input type="radio" name="fix" />Фиксированная</lable>
-              <lable><input type="radio" name="stretch" />Резиновая</lable>
+              <label><input type="radio" name="adaptive" checked />Адаптивная</label>
+              <label><input type="radio" name="fix" />Фиксированная</label>
+              <label><input type="radio" name="stretch" />Резиновая</label>
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
@@ -56,9 +57,11 @@
               <label><input type="checkbox" name="galary">Галерея</label>
               <label><input type="checkbox" name="cart">Корзина</label>
             </fieldset>
-        </div>
+          </form>
+          </div>
         <div class="catalog">
           <div class="sort">
+            <b>Сортировать:</b>
             <ul>
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
@@ -147,7 +150,7 @@
         </div>
     	</div>
       <footer class="footer">
-        <div class="conteiner">
+        <div class="container">
           <div class="footer-map">
           </div>
           <div class="footer-contacts">
@@ -159,18 +162,12 @@
           </div>
           <div class="letter">
             <form method="post" name="letter">
-              <p>
-                Ваше имя:
-              </p>
-              <input type="text" placeholder="Представьтесь, пожалуйста" />
-              <p>
-                Ваше e-mail:
-              </p>
-              <input type="text" placeholder="Для отправки ответа" />
-              <p>
-                Текст письма:
-              </p>
-              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+              <label>Ваше имя:
+              <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
+              <label>Ваше e-mail:
+              <input type="text" placeholder="Для отправки ответа" /></label>
+              <label>Текст письма:
+              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
               <input type="submit" value="Отправить" />
             </form>
           </div>
@@ -178,9 +175,9 @@
             <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
             <a class="btn-social btn-social-fb" href="#">Файсбук</a>
             <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-            <h4>
+            <b>
               Давайте дружить, это выгодно!
-            </h4>
+            </b>
             <p>
               Скидка 10% для друзей из социальных сетей.
             </p>

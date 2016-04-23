@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн студия Nerds</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           <a href="#" alt="логотип"><img src="img/logo.png" width="150px" height="50px" alt="Nerds"></a>
         </div>
@@ -131,9 +132,9 @@
               <a href="#"><img src="img/studio3.png" /></a>
             </div>
           </div>
-        </div>
+
       <footer class="footer">
-        <div class="conteiner">
+        <div class="container">
           <div class="footer-map">
           </div>
           <div class="footer-contacts">
@@ -145,18 +146,12 @@
           </div>
           <div class="letter">
             <form method="post" name="letter">
-              <p>
-                Ваше имя:
-              </p>
-              <input type="text" placeholder="Представьтесь, пожалуйста" />
-              <p>
-                Ваше e-mail:
-              </p>
-              <input type="text" placeholder="Для отправки ответа" />
-              <p>
-                Текст письма:
-              </p>
-              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+              <label>Ваше имя:
+              <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
+              <label>Ваше e-mail:
+              <input type="text" placeholder="Для отправки ответа" /></label>
+              <label>Текст письма:
+              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
               <input type="submit" value="Отправить" />
             </form>
           </div>
@@ -164,9 +159,9 @@
             <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
             <a class="btn-social btn-social-fb" href="#">Файсбук</a>
             <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-            <h4>
+            <b>
               Давайте дружить, это выгодно!
-            </h4>
+            </b>
             <p>
               Скидка 10% для друзей из социальных сетей.
             </p>
