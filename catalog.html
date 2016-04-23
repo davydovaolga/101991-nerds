@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           <a href="#" alt="логотип"><img src="img/logo.png" width="150px" height="50px" alt="Nerds"></a>
         </div>
@@ -32,7 +32,14 @@
           </div>
         </div>
       </header>
-      <div class="container">
+      <div class="welcome">
+        <div class="container">
+          <b>
+            Добро пожаловать в магазин готовых макетов
+          </b>
+        </div>
+      </div>
+      <main class="container">
         <div class="filter">
         <form name="filter" method="post" action="filter.php">
           <fieldset>
@@ -149,41 +156,44 @@
           </ul>
         </div>
     	</div>
-    </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-map">
-          </div>
-          <div class="footer-contacts">
-            Nerds Design Studio<br />
-            191186, Санкт-Петербург,<br />
-            ул. Б. Коннюшенная, д. 19/8<br />
-            Тел. +7 (812) 275-75-75
-            <a href="#" class="btn">Напишите нам</a>
-          </div>
-          <div class="letter-wrapper">
-            <form method="post" class="letter">
-              <label>Ваше имя:
-              <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
-              <label>Ваше e-mail:
-              <input type="text" placeholder="Для отправки ответа" /></label>
-              <label>Текст письма:
-              <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
-              <input type="submit" value="Отправить" />
-            </form>
-          </div>
-          <div class="footer-social">
-            <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
-            <a class="btn-social btn-social-fb" href="#">Файсбук</a>
-            <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-            <b>
-              Давайте дружить, это выгодно!
-            </b>
-            <p>
-              Скидка 10% для друзей из социальных сетей.
-            </p>
-          </div>
+    </main>
+    <div class="map">
+      <div class="container">
+        <div class="contacts">
+          Nerds Design Studio<br />
+          191186, Санкт-Петербург,<br />
+          ул. Б. Коннюшенная, д. 19/8<br />
+          Тел. +7 (812) 275-75-75
+          <a href="#" class="btn">Напишите нам</a>
         </div>
-      </footer>
+      </div>
+      </div>
+
+    <!--
+    <div class="letter-wrapper">
+      <form method="post" class="letter">
+        <label>Ваше имя:
+        <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
+        <label>Ваше e-mail:
+        <input type="text" placeholder="Для отправки ответа" /></label>
+        <label>Текст письма:
+        <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
+        <input type="submit" value="Отправить" />
+      </form>
+    </div>-->
+    <footer class="footer clearfix">
+    <div class="container">
+      <div class="footer-social">
+        <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+        <a class="btn-social btn-social-fb" href="#">Файсбук</a>
+        <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+      </div>
+      <div class="footer-sale">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
