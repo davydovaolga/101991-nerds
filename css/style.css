@@ -88,7 +88,7 @@ h3 {
 .main-menu {
   width: 450px;
   float: left;
-  min-height: 70px;
+  min-height: 85px;
   margin-left: 180px;
   font-size: 14px;
 }
@@ -126,33 +126,23 @@ h3 {
   font-size: 15px;
 }
 .btn-cart {
-  position: relative;
-
   display: inline-block;
   padding-top: 55px;
-  padding-left: 30px;
-
   text-decoration: none;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
+.icon-basket i {
+  padding-top: 20px;
+  padding-right: 10px;
+  opacity: 0.
+}
 .btn-cart:hover {
   color: #fb565a;
 }
-.btn-cart::before {
-  content: "\62";
-  position: absolute;
-  font-family: "symbols-nerds";
-  font-size: 16px;
 
-  top: 55px;
-  left: 0;
-
-  height: 20px;
-  width: 20px;
-}
 .welcome {
   min-height: 115px;
   margin-bottom: 80px;
@@ -168,10 +158,13 @@ h3 {
   min-height: 275px;
   margin-bottom: 80px;
   font-size: 15px;
-  background: url("img/slider1.png");
+  background: url("../img/slider1.png") no-repeat 100% 0;
+  padding-bottom: 60px;
+
 }
 .slider h1 {
   width: 300px;
+  padding-top: 24px;
 }
 .slider p {
   width: 370px;
@@ -250,7 +243,6 @@ h3 {
 .servises-item:last-child {
   margin-right: 0px;
 }
-
 .info {
   margin-bottom: 60px;
   padding-bottom: 58px;
@@ -272,11 +264,29 @@ h3 {
   color: #283136;
   padding-bottom: 35px;
 }
+.info-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .info-left li {
   font-size: 16px;
   line-height: 22px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   color: #283136;
+
+  position: relative;
+  padding-left: 35px;
+}
+.info-left li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+
+  top: 10px;
+  left: 0;
 }
 .info-right {
   width: 240px;
@@ -290,20 +300,59 @@ h3 {
 }
 .year {
   margin: 0 auto;
+
 }
 .year p {
   text-align: center;
   margin: 0;
   font-size: 16px;
-  line-height: 3px;
+  line-height: 9px;
   text-transform: uppercase;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
+  position: relative;
+}
+.year p::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
+
+  top: 5px;
+  left: 0px;
+}
+.year p::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
+
+  top: 5px;
+  left: 175px;
+}
+.info-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .info-right li {
   font-size: 16px;
   line-height: 22px;
   padding-bottom: 15px;
   color: #283136;
+  position: relative;
+  padding-left: 35px;
+}
+.info-right li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+
+  top: 10px;
+  left: 0;
 }
 .studios {
   margin-bottom: 85px;
@@ -363,7 +412,19 @@ h3 {
 .map {
   min-height: 330px;
   padding-top: 85px;
-  background: #eeeeee url("img/map.jpg") no-repeat center;
+  background: #eeeeee url("../img/map.jpg") no-repeat center;
+  position: relative;
+}
+.map::after {
+  content: "";
+  position: absolute;
+  background:url("../img/marker.png") no-repeat center;
+
+  width: 231px;
+  height: 190px;
+
+  top: 112px;
+  left:62.5%;
 }
 .contacts {
   width: 250px;
@@ -371,10 +432,7 @@ h3 {
   line-height: 20px;
   background-color: #ffffff;
   color: #000000;
-  padding-top: 25px;
-  padding-left: 20px;
-
-  font-family: "Times New Roman",serif;
+  padding: 25px 20px;
 }
 .name {
   text-transform: uppercase;
@@ -386,12 +444,10 @@ h3 {
 .contacts .btn {
   padding-left: 52px;
   padding-right: 52px;
+  text-align: center;
+  margin: 0 auto;
 }
-.btn {
-  margin: 0 auto; /*не центрует почему то кнопку? */
-  margin-bottom: 25px;
-  font-family: "Roboto","Tahoma",sans-serif;
-}
+
 .footer {
   margin-top: 80px;
   padding-bottom: 80px;
