@@ -104,6 +104,9 @@ h3 {
 .main-menu a:hover {
   color: #fb565a;
 }
+.main-menu a:active {
+  color: #959595;
+}
 .main-menu ul {
   padding: 0;
   margin: 0;
@@ -121,11 +124,9 @@ h3 {
 .cart {
   width: 100px;
   float: right;
-  min-height: 70px;
-
   font-size: 15px;
 }
-.btn-cart {
+.icon-basket {
   display: inline-block;
   padding-top: 55px;
   text-decoration: none;
@@ -133,16 +134,36 @@ h3 {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 28px;
+  position: relative;
 }
-.icon-basket i {
-  padding-top: 20px;
-  padding-right: 10px;
-  opacity: 0.
+.icon-basket::before {
+  content: "\62";
+  position: absolute;
+  font-family: "symbols-nerds";
+  font-size: 16px;
+  color: #000000;
+  left:0;
+  top: 60px;
+
+  width: 10px;
+  height: 10px;
+  opacity: 0.3;
 }
-.btn-cart:hover {
+.icon-basket:hover::before {
+  color: #fb565a;
+  opacity: 1;
+}
+.icon-basket:hover {
   color: #fb565a;
 }
-
+.icon-basket:active::before {
+  color: #959595;
+  opacity: 0.15;
+}
+.icon-basket:active {
+  color: #959595;
+}
 .welcome {
   min-height: 115px;
   margin-bottom: 80px;
@@ -525,7 +546,6 @@ h3 {
 .footer-sale b {
   font-size: 36px;
   line-height: 36px;
-
 }
 .footer-sale p {
 
