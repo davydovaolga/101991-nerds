@@ -576,10 +576,12 @@ input[type="checkbox"] + label:disabled::before {
 }
 .sort {
   width: 560px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  background: rgba(255, 0, 0, 0.5);
+  min-height: 18px;
 }
 .sort b {
   float: left;
@@ -589,12 +591,11 @@ input[type="checkbox"] + label:disabled::before {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 10px;
+  float: left;
 }
 .sort-list li {
   display: inline-block;
   margin-right: 45px;
-  float: left;
 }
 .sort-list a {
   color: #c7c7c7;
@@ -617,14 +618,12 @@ input[type="checkbox"] + label:disabled::before {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 .icon-down-dir::before {
   content: "\25bc";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0px;
+  top: 0;
   left: 0;
   color: #00ca74;
   font-size: 23px;
@@ -633,8 +632,6 @@ input[type="checkbox"] + label:disabled::before {
 .icon-up-dir::before {
   content: "\25b2";
   position: absolute;
-  width: 10px;
-  height: 10px;
   top: 0px;
   left: 5px;
   color: #c1c1c1;
@@ -646,42 +643,6 @@ input[type="checkbox"] + label:disabled::before {
   float: right;
   margin-bottom: 80px;
 }
-.title-maket {
-  height: 30px;
-  background-color: #f1f1f1;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  position: relative;
-}
-.cicle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  position: absolute;
-  left: 50px;
-  top: 10px;
-}
-.title-maket::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  left: 10px;
-  top: 10px;
-}
-.title-maket::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  left: 30px;
-  top: 10px;
-}
 .catalog-item {
   display: inline-block;
   width: 240px;
@@ -689,22 +650,40 @@ input[type="checkbox"] + label:disabled::before {
   vertical-align: top;
   font-size: 15px;
   position: relative;
+  border-top: #f1f1f1 solid 30px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
 }
-/*.hover-maket {
-  display: none;
-}*/
+.catalog-item::before {
+  content: "";
+  background: url("../img/dots.png") no-repeat;
+  position: absolute;
+  width: 44px;
+  height: 10px;
+  left: 10px;
+  top: -20px;
+}
+.catalog-item:hover {
+  border-top: #797979 solid 30px;
+}
+.catalog-item:hover .hover-maket {
+  display: block;
+}
 .hover-maket {
   position: absolute;
   width: 200px;
   height: 200px;
   left: 20px;
-  top: 50px;
+  top: 20px;
   background-color: #ffffff;
   text-align: center;
+  display: none;
 }
 .hover-maket h4 {
   text-transform: uppercase;
   font-size: 18px;
+  margin-bottom: 18px;
 }
 .hover-maket p {
   font-size: 14px;
@@ -720,6 +699,7 @@ input[type="checkbox"] + label:disabled::before {
   width: 140px;
   margin: 0 auto;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 .catalog-item:nth-child(even) {
   margin-right: 80px;
@@ -825,7 +805,7 @@ input[type="checkbox"] + label:disabled::before {
   display: inline-block;
   width: 60px;
   height: 60px;
-  border-radius: 30px;
+  border-radius: 50%;
   background: #e1e1e1;
   font-size: 0px;
   margin-right: 20px;
@@ -850,8 +830,6 @@ input[type="checkbox"] + label:disabled::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 22px;
-  height: 20px;
 }
 
 .btn-social-fb::before {
@@ -863,8 +841,6 @@ input[type="checkbox"] + label:disabled::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 15px;
-  height: 20px;
 }
 .btn-social-inst::before {
   content: "📷";
@@ -875,8 +851,6 @@ input[type="checkbox"] + label:disabled::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
 }
 .footer-sale {
   width: 560px;

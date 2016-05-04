@@ -39,134 +39,122 @@
           <h1>Добро пожаловать в магазин готовых макетов</h1>
         </div>
       </div>
-      <main class="container clearfix">
-        <div class="filter">
-        <form name="filter" method="post" action="filter.php">
-          <fieldset>
-            <legend>Стоимость:</legend>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+      <main>
+        <div class="container clearfix">
+          <div class="filter">
+          <form name="filter" method="post" action="filter.php">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
-            </div>
-            <div class="price-controls">
-              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
-              <div class="grid">
-                <input type="radio" name="adaptive" checked id="adaptive"/><label for="adaptive">Адаптивная</label>
-                <input type="radio" name="fix" id="fix"/><label for="fix">Фиксированная</label>
-                <input type="radio" name="stretch" id="stretch"/><label for="stretch">Резиновая</label>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
               </div>
-          </fieldset>
-          <fieldset>
-              <legend>Особенности:</legend>
-              <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
-              <input type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок приемуществ</label>
-              <input type="checkbox" name="news" checked id="news"><label for="news">Новости</label>
-              <input type="checkbox" name="galary" id="galary"><label for="galary">Галерея</label>
-              <input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
-          </fieldset>
-            <button class="btn">Показать</button>
-          </form>
-          </div>
-        <div class="catalog">
-          <div class="sort">
-            <b>Сортировать:</b>
-            <ul class="sort-list">
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
-            </ul>
-            <div class="sort-arrow">
-              <a href="#" class="icon-down-dir">Вниз</a>
-              <a href="#" class="icon-up-dir">Вверх</a>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+                <div class="grid">
+                  <input type="radio" name="adaptive" checked id="adaptive"/><label for="adaptive">Адаптивная</label>
+                  <input type="radio" name="fix" id="fix"/><label for="fix">Фиксированная</label>
+                  <input type="radio" name="stretch" id="stretch"/><label for="stretch">Резиновая</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Особенности:</legend>
+                <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
+                <input type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок приемуществ</label>
+                <input type="checkbox" name="news" checked id="news"><label for="news">Новости</label>
+                <input type="checkbox" name="galary" id="galary"><label for="galary">Галерея</label>
+                <input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
+            </fieldset>
+              <button class="btn">Показать</button>
+            </form>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="title-maket">
-              <div class="cicle">
-              </div>
-            </div>
-            <img src="img/maket1.jpg" alt="Авиатор"/>
-            <div class="hover-maket">
-              <h4>Aviator</h4>
-              <p>Односторонний макет с авторским дизайном</p>
-              <a href="#" class="btn">8000 Р.</a>
-            </div>
-          </div>
-            <div class="catalog-item">
-              <div class="title-maket">
-              </div>
-              <img src="img/maket2.jpg" alt="Авиатор"/>
-              <div class="hover-maket">
-                <h4>Sunset</h4>
-                <p>Интернет-магазин с личным кабинетом</p>
-                <a href="#" class="btn">10000 Р.</a>
+          <div class="catalog">
+            <div class="sort">
+              <b>Сортировать:</b>
+              <ul class="sort-list">
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+              </ul>
+              <div class="sort-arrow">
+                <a href="#" class="icon-down-dir">Вниз</a>
+                <a href="#" class="icon-up-dir">Вверх</a>
               </div>
             </div>
             <div class="catalog-item">
-              <div class="title-maket">
-              </div>
-              <img src="img/maket3.jpg" alt="Авиатор"/>
+              <img src="img/maket1.jpg" alt="Авиатор"/>
               <div class="hover-maket">
-                <h4>Forte</h4>
-                <p>Отличный макет для личного блога</p>
-                <a href="#" class="btn">5000 Р.</a>
-              </div>
-            </div>
-            <div class="catalog-item">
-              <div class="title-maket">
-              </div>
-              <img src="img/maket4.jpg" alt="Авиатор"/>
-              <div class="hover-maket">
-                <h4>Modern organic thai</h4>
-                <p>Сайт для ресторана быстрого питания</p>
-                <a href="#" class="btn">12000 Р.</a>
-              </div>
-            </div>
-            <div class="catalog-item">
-              <div class="title-maket">
-              </div>
-              <img src="img/maket5.jpg" alt="Авиатор"/>
-              <div class="hover-maket">
-                <h4>Avenue</h4>
-                <p>Макет для блога о путешествиях</p>
+                <h4>Aviator</h4>
+                <p>Односторонний макет с авторским дизайном</p>
                 <a href="#" class="btn">8000 Р.</a>
               </div>
             </div>
-            <div class="catalog-item">
-              <div class="title-maket">
+              <div class="catalog-item">
+                <img src="img/maket2.jpg" alt="Авиатор"/>
+                <div class="hover-maket">
+                  <h4>Sunset</h4>
+                  <p>Интернет-магазин с личным кабинетом</p>
+                  <a href="#" class="btn">10000 Р.</a>
+                </div>
               </div>
-              <img src="img/maket6.jpg" alt="Авиатор"/>
-              <div class="hover-maket">
-                <h4>Dovetail</h4>
-                <p>Интернет-магазин с галереей товаров</p>
-                <a href="#" class="btn">14000 Р.</a>
+              <div class="catalog-item">
+                <img src="img/maket3.jpg" alt="Авиатор"/>
+                <div class="hover-maket">
+                  <h4>Forte</h4>
+                  <p>Отличный макет для личного блога</p>
+                  <a href="#" class="btn">5000 Р.</a>
+                </div>
               </div>
-            </div>
-            <div class="pagination">
-            <ul>
-                <li>
-                  <span class="page-active" href="#">1</span>
-                </li>
-                <li>
-                  <a href="#">2</a>
-                </li>
-                <li>
-                  <a href="#">3</a>
-                </li>
-                <li>
-                  <a href="#">Следующая</a>
-                </li>
-              </ul>
-            </div>
-        </div>
+              <div class="catalog-item">
+                <img src="img/maket4.jpg" alt="Авиатор"/>
+                <div class="hover-maket">
+                  <h4>Modern organic thai</h4>
+                  <p>Сайт для ресторана быстрого питания</p>
+                  <a href="#" class="btn">12000 Р.</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <img src="img/maket5.jpg" alt="Авиатор"/>
+                <div class="hover-maket">
+                  <h4>Avenue</h4>
+                  <p>Макет для блога о путешествиях</p>
+                  <a href="#" class="btn">8000 Р.</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <img src="img/maket6.jpg" alt="Авиатор"/>
+                <div class="hover-maket">
+                  <h4>Dovetail</h4>
+                  <p>Интернет-магазин с галереей товаров</p>
+                  <a href="#" class="btn">14000 Р.</a>
+                </div>
+              </div>
+              <div class="pagination">
+              <ul>
+                  <li>
+                    <span class="page-active" href="#">1</span>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">Следующая</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
     </main>
     <div class="map">
       <div class="container">
