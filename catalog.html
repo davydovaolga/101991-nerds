@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Дизайн студия Nerds</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн студия Nerds</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
     <header class="header">
       <div class="container clearfix">
@@ -32,16 +32,16 @@
         <div class="cart">
           <a class="icon-basket" href="#">Корзина</a>
         </div>
-        </div>
-      </header>
-      <div class="promo">
-        <div class="container">
-          <h1>Добро пожаловать в магазин готовых макетов</h1>
-        </div>
       </div>
-      <main>
-        <div class="container clearfix">
-          <div class="filter">
+    </header>
+    <div class="promo">
+      <div class="container">
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </div>
+    <main>
+      <div class="container clearfix">
+        <div class="filter">
           <form name="filter" method="post" action="filter.php">
             <fieldset>
               <legend>Стоимость:</legend>
@@ -66,94 +66,94 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Особенности:</legend>
-                <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
-                <input type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок приемуществ</label>
-                <input type="checkbox" name="news" checked id="news"><label for="news">Новости</label>
-                <input type="checkbox" name="galary" id="galary"><label for="galary">Галерея</label>
-                <input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
+              <legend>Особенности:</legend>
+              <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
+              <input type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок приемуществ</label>
+              <input type="checkbox" name="news" checked id="news"><label for="news">Новости</label>
+              <input type="checkbox" name="galary" id="galary"><label for="galary">Галерея</label>
+              <input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
             </fieldset>
-              <button class="btn">Показать</button>
-            </form>
+            <button class="btn">Показать</button>
+          </form>
+        </div>
+        <div class="catalog">
+          <div class="sort clearfix">
+            <b>Сортировать:</b>
+            <ul class="sort-list">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+            </ul>
+            <div class="sort-arrow">
+              <a href="#" class="icon-down-dir selected">Вниз</a>
+              <a href="#" class="icon-up-dir">Вверх</a>
             </div>
-          <div class="catalog">
-            <div class="sort clearfix">
-              <b>Сортировать:</b>
-              <ul class="sort-list">
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По функционалу</a></li>
-              </ul>
-              <div class="sort-arrow">
-                <a href="#" class="icon-down-dir selected">Вниз</a>
-                <a href="#" class="icon-up-dir">Вверх</a>
-              </div>
-            </div>
-            <div class="catalog-item">
-              <img src="img/maket1.jpg" alt="Авиатор"/>
-              <div class="hover-maket">
-                <h4>Aviator</h4>
-                <p>Односторонний макет с авторским дизайном</p>
-                <a href="#" class="btn">8000 Р.</a>
-              </div>
-            </div>
-              <div class="catalog-item">
-                <img src="img/maket2.jpg" alt="Авиатор"/>
-                <div class="hover-maket">
-                  <h4>Sunset</h4>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a href="#" class="btn">10000 Р.</a>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <img src="img/maket3.jpg" alt="Авиатор"/>
-                <div class="hover-maket">
-                  <h4>Forte</h4>
-                  <p>Отличный макет для личного блога</p>
-                  <a href="#" class="btn">5000 Р.</a>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <img src="img/maket4.jpg" alt="Авиатор"/>
-                <div class="hover-maket">
-                  <h4>Modern organic thai</h4>
-                  <p>Сайт для ресторана быстрого питания</p>
-                  <a href="#" class="btn">12000 Р.</a>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <img src="img/maket5.jpg" alt="Авиатор"/>
-                <div class="hover-maket">
-                  <h4>Avenue</h4>
-                  <p>Макет для блога о путешествиях</p>
-                  <a href="#" class="btn">8000 Р.</a>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <img src="img/maket6.jpg" alt="Авиатор"/>
-                <div class="hover-maket">
-                  <h4>Dovetail</h4>
-                  <p>Интернет-магазин с галереей товаров</p>
-                  <a href="#" class="btn">14000 Р.</a>
-                </div>
-              </div>
-              <div class="pagination">
-              <ul>
-                  <li>
-                    <span class="page-active" href="#">1</span>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">Следующая</a>
-                  </li>
-                </ul>
-              </div>
           </div>
+          <div class="catalog-item">
+            <img src="img/maket1.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Aviator</h4>
+              <p>Односторонний макет с авторским дизайном</p>
+              <a href="#" class="btn">8000 Р.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="img/maket2.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Sunset</h4>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a href="#" class="btn">10000 Р.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="img/maket3.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Forte</h4>
+              <p>Отличный макет для личного блога</p>
+              <a href="#" class="btn">5000 Р.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="img/maket4.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Modern organic thai</h4>
+              <p>Сайт для ресторана быстрого питания</p>
+              <a href="#" class="btn">12000 Р.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="img/maket5.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Avenue</h4>
+              <p>Макет для блога о путешествиях</p>
+              <a href="#" class="btn">8000 Р.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="img/maket6.jpg" alt="Авиатор"/>
+            <div class="hover-maket">
+              <h4>Dovetail</h4>
+              <p>Интернет-магазин с галереей товаров</p>
+              <a href="#" class="btn">14000 Р.</a>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li>
+                <span class="page-active" href="#">1</span>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">Следующая</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
     <div class="map">
@@ -167,18 +167,6 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="letter-wrapper">
-      <form method="post" class="letter">
-        <label>Ваше имя:
-        <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
-        <label>Ваше e-mail:
-        <input type="text" placeholder="Для отправки ответа" /></label>
-        <label>Текст письма:
-        <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
-        <input type="submit" value="Отправить" />
-      </form>
-    </div>-->
     <footer class="footer clearfix">
       <div class="container">
         <div class="footer-social">
@@ -192,5 +180,17 @@
         </div>
       </div>
     </footer>
-</body>
+    <div class="modal-letter">
+      <button class="modal-letter-close">Закрыть</button>
+      <form method="post" class="letter">
+        <label>Ваше имя:
+        <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
+        <label>Ваше e-mail:
+        <input type="text" placeholder="Для отправки ответа" /></label>
+        <label>Текст письма:
+        <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
+        <input type="submit" value="Отправить" />
+      </form>
+    </div>
+  </body>
 </html>
