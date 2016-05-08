@@ -171,12 +171,14 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   background-color: #eeeeee;
+  padding-right: 15px;
 }
 .promo h1 {
   display: inline-block;
   font-size: 40px;
-  width: 700px;
-  line-height: 50px;
+  width: 690px;
+  line-height: 45px;
+  font-weight: 400;
 }
 .slider {
   background-color: #eeeeee;
@@ -496,6 +498,15 @@ h3 {
 }
 .filter fieldset {
   border: 0;
+  margin: 0;
+  padding: 0;
+}
+.filter fieldset {
+  margin-bottom: 40px;
+}
+.filter fieldset:nth-child(2),
+.filter fieldset:nth-child(3) {
+  margin-bottom: 30px;
 }
 .filter legend {
   font-size: 18px;
@@ -538,7 +549,7 @@ h3 {
   left: 20px;
 }
 .range-controls .toggle-max {
-  left: 145px;
+  left: 160px;
 }
 .price-controls {
   font-size: 0;
@@ -547,6 +558,7 @@ h3 {
   display: inline-block;
   width: 50%;
   font-size: 16px;
+  text-transform: uppercase;
 }
 .price-controls input {
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -559,7 +571,7 @@ h3 {
   border-radius: 5px;
   outline: none;
   background: #f1f1f1;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 .max-price {
   text-align: right;
@@ -666,7 +678,8 @@ input[type="checkbox"] + label:disabled::before {
 }
 .sort {
   width: 560px;
-  margin-bottom: 30px;
+  margin-top: 2px;
+  margin-bottom: 23px;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
@@ -685,7 +698,7 @@ input[type="checkbox"] + label:disabled::before {
 }
 .sort-list li {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 40px;
 }
 .sort-list a {
   color: #c7c7c7;
@@ -733,8 +746,7 @@ input[type="checkbox"] + label:disabled::before {
   width: 12px;
   height: 23px;
 }
-.icon-up-dir .selected,
-.icon-down-dir .selected  {
+.selected {
   color: #00ca74;
 }
 .sort-arrow .icon-up-dir:hover::before,
@@ -753,7 +765,7 @@ input[type="checkbox"] + label:disabled::before {
 .catalog-item {
   display: inline-block;
   width: 240px;
-  margin-bottom: 75px;
+  margin-bottom: 73px;
   vertical-align: top;
   font-size: 15px;
   position: relative;
@@ -762,7 +774,6 @@ input[type="checkbox"] + label:disabled::before {
   border-top-left-radius: 5px;
   position: relative;
 }
-
 .catalog-item::before {
   content: "";
   background: url("../img/dots.png") no-repeat;
@@ -838,9 +849,9 @@ input[type="checkbox"] + label:disabled::before {
 }
 .pagination li {
   display: inline-block;
-  margin-left: 10px;
+  margin-right: 8px;
 }
-.pagination li:last-child a{
+.pagination-item-last {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -851,16 +862,16 @@ input[type="checkbox"] + label:disabled::before {
   display: block;
   text-decoration: none;
   color: #000000;
-  border: 1px solid #f1f1f1;
-  height: 27px;
-  min-width: 38px;
-  border-radius: 5px;
+  border: 2px solid #f1f1f1;
+  height: 24px;
+  min-width: 32px;
+  border-radius: 3px;
   text-align: center;
   font-size: 12px;
   line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  padding-top: 11px;
+  padding-top: 9px;
   vertical-align: middle;
 }
 .pagination a {
