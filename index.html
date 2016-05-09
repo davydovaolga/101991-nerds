@@ -166,16 +166,20 @@
         </div>
       </div>
     </footer>
-    <div class="modal-letter">
-      <button class="modal-letter-close">Закрыть</button>
+    <div class="modal-content">
+      <button class="modal-contetnt-close">Закрыть</button>
       <form method="post" class="letter">
-        <label>Ваше имя:
-        <input type="text" placeholder="Представьтесь, пожалуйста" /></label>
-        <label>Ваше e-mail:
-        <input type="text" placeholder="Для отправки ответа" /></label>
-        <label>Текст письма:
-        <textarea name="text" cols="40" rows="3" placeholder="В свободной форме"></textarea></label>
-        <input type="submit" value="Отправить" />
+        <div class="two-column">
+          <label for="name">Ваше имя:</label>
+          <input  id="name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="two-column">
+          <label for="email">Ваш e-mail:</label>
+          <input  id="email" type="text" name="email" placeholder="Для отправки ответа">
+        </div>
+        <label for="comment-field">Текст письма:</label>
+        <textarea id="comment-field" name="comment" rows="4" placeholder="В свободной форме"></textarea>
+        <button class="btn">Отправить</button>
       </form>
     </div>
   </body>
