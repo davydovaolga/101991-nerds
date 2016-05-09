@@ -323,8 +323,10 @@ h3 {
   margin-bottom: 27px;
 }
 .servises-item .btn {
-  padding-left: 38px;
-  padding-right: 38px;
+  width: 140px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
 }
 .red:hover {
   background-color: #d6494d;
@@ -664,8 +666,10 @@ input[type="checkbox"] + label:disabled::before {
 }
 .filter .btn {
   background-color: #f1f1f1;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 155px;
+  text-align: center;
   color: #000000;
   font-weight: bold;
 }
@@ -1008,6 +1012,7 @@ input[type="checkbox"] + label:disabled::before {
   padding-bottom: 50px;
   margin-left: -325px;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+  display: none;
 }
 .modal-contetnt-close {
   position: absolute;
@@ -1038,19 +1043,12 @@ input[type="checkbox"] + label:disabled::before {
 .modal-contetnt-close::after {
   transform: rotate(-45deg);
 }
-.modal-content .btn {
-  width: 100%;
-}
-.modal-content .btn:hover {
-  background-color: #d6494d;
-}
-.modal-content .btn:active {
-  background-color: #d6494d;
-  box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.15);
+.letter {
+  width: 460px;
+  font-size: 0;
 }
 .two-column {
   display: inline-block;
-  font-size: 0;
   margin-right: 18px;
   vertical-align: top;
   width: 220px;
@@ -1063,7 +1061,7 @@ input[type="checkbox"] + label:disabled::before {
   margin-bottom: 9px;
   display: block;
 }
-input[type="text"], textarea  {
+.letter input[type="text"], textarea  {
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto","Tahoma",sans-serif;
@@ -1075,20 +1073,31 @@ input[type="text"], textarea  {
   color: #000000;
   border-radius: 3px;
 }
-input[type="text"] {
+.letter input[type="text"] {
   width: 202px;
   margin-bottom: 16px;
 }
-textarea {
-  width: 460px;
+.form-letter textarea {
+  width: 100%;
   margin-bottom: 45px;
   resize: none;
+  box-sizing:border-box
 }
-input:hover,
-textarea:hover {
+.letter input:hover,
+.form-letter textarea:hover {
   border: 2px solid #a2a9ac;
 }
-input:focus,
-textarea:focus {
+.letter input:focus,
+.form-letter textarea:focus {
   border: 2px solid #56bffb;
+}
+.modal-content .btn {
+  width: 100%;
+}
+.modal-content .btn:hover {
+  background-color: #d6494d;
+}
+.modal-content .btn:active {
+  background-color: #d6494d;
+  box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.15);
 }
